@@ -1,0 +1,56 @@
+/*
+  Custom layer on top of Bootstrap 5 to keep the look professional and sober.
+  Minimal overrides keep performance high and make future maintenance easy.
+*/
+:root {
+  --brand-accent: #1e3a8a;
+  --brand-muted: #6b7280;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  color: #111827;
+  background-color: #f8f9fb;
+}
+
+.hero {
+  background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+}
+
+.section-title {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.navbar-brand {
+  letter-spacing: 0.3px;
+}
+
+.btn-primary {
+  background-color: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.btn-outline-primary {
+  color: var(--brand-accent);
+  border-color: var(--brand-accent);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--brand-accent);
+  color: #ffffff;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+footer {
+  background-color: #ffffff;
+}
+
+@media (min-width: 992px) {
+  .hero .card {
+    margin-left: auto;
+  }
+}
