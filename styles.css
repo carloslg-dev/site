@@ -3,46 +3,99 @@
   Minimal overrides keep performance high and make future maintenance easy.
 */
 :root {
-  --brand-accent: #1e3a8a;
+  /* Warm yellow accent (soft + professional) */
+  --brand-accent: #f2c94c;      /* soft amber */
+  --brand-accent-hover: #eab308; /* slightly stronger amber for hover */
+  --brand-ink: #111827;
   --brand-muted: #6b7280;
+
+  /* Subtle backgrounds / borders */
+  --brand-bg: #f8f9fb;
+  --brand-warm-bg: #fff8e1;    /* very light warm tint */
+  --brand-border: #e5e7eb;
 }
 
 body {
   font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  color: #111827;
-  background-color: #f8f9fb;
+  color: var(--brand-ink);
+  background-color: var(--brand-bg);
 }
 
 .hero {
-  background: linear-gradient(180deg, #ffffff 0%, #f8f9fb 100%);
+  /* a touch of warmth while keeping the original feel */
+  background: linear-gradient(180deg, #ffffff 0%, var(--brand-warm-bg) 45%, var(--brand-bg) 100%);
 }
 
 .section-title {
   font-weight: 600;
   margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+}
+
+/* subtle underline accent */
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 56%;
+  height: 3px;
+  background: var(--brand-accent);
+  border-radius: 999px;
+  opacity: 0.9;
 }
 
 .navbar-brand {
   letter-spacing: 0.3px;
 }
 
+/* Buttons */
 .btn-primary {
   background-color: var(--brand-accent);
   border-color: var(--brand-accent);
+  color: var(--brand-ink);
+  font-weight: 600;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--brand-accent-hover);
+  border-color: var(--brand-accent-hover);
+  color: var(--brand-ink);
 }
 
 .btn-outline-primary {
-  color: var(--brand-accent);
+  color: var(--brand-ink);
   border-color: var(--brand-accent);
+  font-weight: 600;
 }
 
-.btn-outline-primary:hover {
-  background-color: var(--brand-accent);
-  color: #ffffff;
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--brand-warm-bg);
+  border-color: var(--brand-accent);
+  color: var(--brand-ink);
 }
 
+/* Cards */
 .card {
   border-radius: 0.75rem;
+  border-color: var(--brand-border);
+}
+
+/* Optional: make primary bordered cards feel warmer, not "alert-like" */
+.card.border-primary {
+  border-color: rgba(242, 201, 76, 0.55) !important;
+}
+
+/* Links */
+a {
+  color: #b7791f; /* warm mustard for readability */
+}
+a:hover {
+  color: #925c12;
 }
 
 footer {
@@ -54,3 +107,4 @@ footer {
     margin-left: auto;
   }
 }
+
