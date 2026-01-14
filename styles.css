@@ -108,3 +108,35 @@ footer {
   }
 }
 
+@media print {
+  nav, footer, #music, #cases {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    font-size: 11pt;
+  }
+
+  .card {
+    break-inside: avoid;
+    box-shadow: none !important;
+    border: 1px solid #ddd;
+  }
+
+  .section-title::after {
+    display: none;
+  }
+  .btn,
+  .hero .d-flex,
+  #contact .btn,
+  #contact .card.border-primary,
+  #contact .card:last-child {
+    display: none !important;
+  }
+
+  a::after {
+    content: "";
+  }
+}
+

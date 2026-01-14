@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Carlos López García | Senior Java / Backend Engineer</title>
+
+    <title>Carlos López García | Software Engineer (Full-Stack) | Architecture & Delivery</title>
     <meta
       name="description"
-      content="Ingeniero Java/Spring con 15+ años construyendo plataformas backend fiables. Disponible para freelance y oportunidades por cuenta ajena."
+      content="Software Engineer con 15+ años entregando aplicaciones enterprise end-to-end (Java/Spring + Angular). Fuerte en análisis técnico, arquitectura y delivery pragmático. Disponible para freelance y oportunidades por cuenta ajena."
     />
-    <link rel="canonical" href="/es/" />
-    <link rel="alternate" hreflang="en" href="/" />
-    <link rel="alternate" hreflang="es" href="/es/" />
 
-    <!-- Bootstrap 5 vía CDN para rendimiento y caché compartida -->
+    <!-- GitHub Pages (project site) canonical + hreflang -->
+    <link rel="canonical" href="https://carloslg-dev.github.io/site/es/" />
+    <link rel="alternate" hreflang="en" href="https://carloslg-dev.github.io/site/index.html" />
+    <link rel="alternate" hreflang="es" href="https://carloslg-dev.github.io/site/es/index.html" />
+
+    <!-- Bootstrap 5 via CDN for fast, cache-friendly delivery -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -21,8 +24,9 @@
     />
     <link rel="stylesheet" href="../styles.css" />
   </head>
+
   <body>
-    <header class="border-bottom bg-white sticky-top">
+    <header class="border-bottom bg-white sticky-top no-print">
       <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container">
           <a class="navbar-brand fw-semibold" href="#top">Carlos López García</a>
@@ -33,21 +37,24 @@
             data-bs-target="#mainNav"
             aria-controls="mainNav"
             aria-expanded="false"
-            aria-label="Abrir navegación"
+            aria-label="Alternar navegación"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
               <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
-              <li class="nav-item"><a class="nav-link" href="#cases">Casos de éxito</a></li>
+              <li class="nav-item"><a class="nav-link" href="#cases">Casos</a></li>
               <li class="nav-item"><a class="nav-link" href="#working">Colaboración</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
             </ul>
+
+            <!-- Language switcher -->
             <div class="d-flex align-items-center gap-2">
-              <a class="btn btn-primary btn-sm" href="/es/" aria-current="page">ES</a>
-              <a class="btn btn-outline-primary btn-sm" href="/">EN</a>
+              <a class="btn btn-primary btn-sm" href="./index.html" aria-current="page">ES</a>
+              <a class="btn btn-outline-primary btn-sm" href="../index.html" aria-label="View English version">EN</a>
             </div>
           </div>
         </div>
@@ -59,32 +66,40 @@
         <div class="container">
           <div class="row align-items-center gy-4">
             <div class="col-lg-7">
-              <p class="text-uppercase text-muted small mb-2">Senior Java / Backend Engineer</p>
-              <h1 class="display-5 fw-semibold">Sistemas fiables, arquitectura clara y entrega pragmática.</h1>
-              <p class="lead text-muted">
-                Freelance &amp; abierto a cuenta ajena. Más de 15 años diseñando y evolucionando software empresarial con Java/Spring,
-                microservicios e integraciones complejas.
+              <p class="text-uppercase text-muted small mb-2">
+                Software Engineer | Full-Stack (Java/Spring + Angular) | Arquitectura &amp; Delivery
               </p>
-              <div class="d-flex flex-wrap gap-3">
+
+              <h1 class="display-5 fw-semibold">Sistemas fiables, arquitectura clara y entrega pragmática.</h1>
+
+              <p class="lead text-muted">
+                Freelance y abierto a oportunidades por cuenta ajena. 15+ años diseñando y evolucionando software enterprise end-to-end:
+                servicios Java/Spring, UIs Angular e integraciones entre sistemas.
+              </p>
+
+              <!-- CTA hidden in print -->
+              <div class="d-flex flex-wrap gap-3 no-print">
                 <a class="btn btn-primary btn-lg" href="#contact">Contactar</a>
                 <a
                   class="btn btn-outline-secondary btn-lg"
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/in/carlos-l%C3%B3pez-8b7ba2b0/"
                   target="_blank"
                   rel="noreferrer"
-                  >LinkedIn</a
                 >
+                  LinkedIn
+                </a>
               </div>
             </div>
+
             <div class="col-lg-5">
               <div class="card shadow-sm">
                 <div class="card-body">
-                  <h2 class="h5">Especialidades</h2>
+                  <h2 class="h5">Áreas de foco</h2>
                   <ul class="list-unstyled mb-0">
-                    <li class="mb-2">✔️ Java 8–17 · Spring Boot · REST/SOAP</li>
-                    <li class="mb-2">✔️ Análisis y documentación técnica de arquitectura</li>
-                    <li class="mb-2">✔️ Integraciones · CI/CD · rendimiento de BBDD</li>
-                    <li>✔️ Entrega asistida con Copilot &amp; ChatGPT</li>
+                    <li class="mb-2">✔️ Java 8–17 · Spring Boot · REST/SOAP · Integraciones</li>
+                    <li class="mb-2">✔️ Web UI: Angular/TypeScript · HTML/CSS · Bootstrap · legacy JSP/jQuery</li>
+                    <li class="mb-2">✔️ Análisis de arquitectura · documentación técnica · alineación con stakeholders</li>
+                    <li>✔️ Calidad pragmática: tests, reviews, CI básico · delivery asistido por IA</li>
                   </ul>
                 </div>
               </div>
@@ -99,9 +114,9 @@
             <div class="col-lg-8">
               <h2 class="section-title">Sobre mí</h2>
               <p class="text-muted">
-                Ayudo a organizaciones a construir plataformas backend robustas. Combino trabajo hands-on con análisis funcional y técnico,
-                alineación con stakeholders y documentación de arquitectura. Estoy cómodo en entornos exigentes (administración pública,
-                salud, industria) y traduzco requisitos en soluciones mantenibles.
+                Ayudo a organizaciones a entregar aplicaciones de negocio fiables end-to-end. Mi trabajo combina ingeniería hands-on con
+                análisis técnico, alineación con stakeholders y claridad arquitectural. Me muevo bien en ecosistemas complejos (administración
+                pública, salud, manufacturing) y traduzco requisitos en soluciones mantenibles.
               </p>
             </div>
           </div>
@@ -112,76 +127,133 @@
         <div class="container">
           <h2 class="section-title">Experiencia</h2>
           <div class="row g-4">
-            <!-- Cards para mantener el contenido sintético y escaneable -->
             <div class="col-md-6">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h5">Volkswagen Group Services</h3>
-                  <p class="text-muted mb-2">Senior Software Engineer / Technical Architect · 2025</p>
+                  <p class="text-muted mb-2">Senior Software Engineer / Solution Designer · 2025 (6 meses)</p>
+
                   <ul class="small text-muted">
-                    <li>Definición de arquitectura por capas y flujos de despliegue.</li>
-                    <li>Documentación técnica e integración en entornos mainframe.</li>
+                    <li>Incorporación en una fase temprana de <strong>descubrimiento y definición</strong> para nuevos servicios digitales internos en un entorno internacional.</li>
+                    <li>Trabajo diario en <strong>equipos en inglés</strong>, colaborando entre países y stakeholders.</li>
+                    <li>Diseño de soluciones técnicas y propuestas de arquitectura para nuevos requerimientos, con foco en mantenibilidad y cumplimiento.</li>
+                    <li>Diseño técnico de un módulo para cumplir con <strong>LOPD</strong>.</li>
+                    <li>Uso activo de <strong>Microsoft Copilot (web)</strong> para acelerar análisis, documentación y diseño de soluciones.</li>
+                    <li>Varias iniciativas se pausaron por <strong>reducciones de presupuesto y alcance</strong>, finalizando anticipadamente la colaboración.</li>
                   </ul>
+
                   <div class="d-flex flex-wrap gap-2">
-                    <span class="badge text-bg-secondary">Java 8</span>
+                    <span class="badge text-bg-secondary">Java</span>
                     <span class="badge text-bg-secondary">Spring</span>
-                    <span class="badge text-bg-secondary">DB2</span>
-                    <span class="badge text-bg-secondary">Angular</span>
-                    <span class="badge text-bg-secondary">Liberty z/OS</span>
+                    <span class="badge text-bg-secondary">Architecture Design</span>
+                    <span class="badge text-bg-secondary">Data Protection</span>
+                    <span class="badge text-bg-secondary">Microsoft Copilot</span>
+                    <span class="badge text-bg-secondary">International Teams</span>
                   </div>
                 </div>
               </article>
             </div>
+
             <div class="col-md-6">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h5">T-Systems Iberia</h3>
-                  <p class="text-muted mb-2">Senior Technical Analyst · 2023–2025</p>
+                  <p class="text-muted mb-2">Senior Technical Analyst (Analista Orgánico) · 2023–2025</p>
+
                   <ul class="small text-muted">
-                    <li>Estimación de evolutivos y coordinación de impactos transversales.</li>
-                    <li>Apoyo a desarrollo en resolución de incidencias complejas.</li>
+                    <li>Responsable técnico de <strong>6 módulos funcionales</strong> dentro de un sistema de gran escala en <strong>Administración de Justicia</strong>.</li>
+                    <li>Definición de <strong>soluciones técnicas y arquitectura</strong> junto a analistas funcionales y, puntualmente, cliente final.</li>
+                    <li>Stack heterogéneo: un módulo en <strong>Angular + MongoDB</strong> y el resto en <strong>Spring + Oracle</strong>.</li>
+                    <li>Estrategia de integración con <strong>Kafka</strong>: implementé la primera integración end-to-end y luego guié al equipo en las siguientes.</li>
+                    <li>Mantenimiento y evolución de <strong>documentación técnica</strong>, cerrando vacíos funcionales para asegurar soluciones consistentes.</li>
+                    <li>Asumí cambios arquitecturales cuando era necesario, garantizando alineación con restricciones del sistema y mantenibilidad.</li>
+                    <li>Soporte a despliegues con <strong>Jenkins</strong> en entorno legacy <strong>WebLogic</strong> y despliegues modernos <strong>containerizados en AWS</strong>.</li>
+                    <li>Contribuí a una migración de módulo <strong>C#</strong> de Oracle Express a <strong>SQL Server Express</strong> para reducir costes de licencia, integrando con hardware y servicios WS.</li>
                   </ul>
+
                   <div class="d-flex flex-wrap gap-2">
-                    <span class="badge text-bg-secondary">Canigó</span>
+                    <span class="badge text-bg-secondary">Java</span>
                     <span class="badge text-bg-secondary">Spring</span>
-                    <span class="badge text-bg-secondary">JSF</span>
+                    <span class="badge text-bg-secondary">Angular</span>
                     <span class="badge text-bg-secondary">Oracle</span>
+                    <span class="badge text-bg-secondary">MongoDB</span>
+                    <span class="badge text-bg-secondary">Kafka</span>
+                    <span class="badge text-bg-secondary">WebLogic</span>
+                    <span class="badge text-bg-secondary">AWS</span>
+                    <span class="badge text-bg-secondary">Docker</span>
+                    <span class="badge text-bg-secondary">Jenkins</span>
+                    <span class="badge text-bg-secondary">SonarQube</span>
+                    <span class="badge text-bg-secondary">C#</span>
+                    <span class="badge text-bg-secondary">SQL Server</span>
                   </div>
                 </div>
               </article>
             </div>
+
             <div class="col-md-6">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h5">Eurofragance</h3>
-                  <p class="text-muted mb-2">Digital Specialist / Solution Architect · 2019–2023</p>
+                  <p class="text-muted mb-2">Senior Software Engineer / Digital Transformation Lead · 2019–2023</p>
+
                   <ul class="small text-muted">
-                    <li>Rearquitectura PLM con Angular + Spring Boot microservicios.</li>
-                    <li>Integración SAP y dirección del roadmap IT.</li>
+                    <li>Principal <strong>referente técnico</strong> de aplicaciones Java que soportaban diseño de fragancias y operativa de pesadas en laboratorio/fábrica.</li>
+                    <li>Mantenimiento y evolución de plataforma legacy <strong>Spring MVC + JSP</strong>, incluyendo tratamiento de datos directo sobre <strong>Oracle</strong> (queries complejas y funciones de BBDD).</li>
+                    <li>Diseño y soporte de <strong>integraciones industriales</strong>: pesadas automáticas/manuales, comunicación Java EE con máquinas y <strong>integración SAP vía IDOCs</strong>.</li>
+                    <li>Soporte end-to-end a negocio interno: estimaciones de viabilidad/esfuerzo y coordinación con proveedores externos para iniciativas grandes.</li>
+                    <li><strong>Digital Transformation Lead</strong> los dos últimos años: definición y entrega de soluciones para automatización y modernización.</li>
+                    <li>Definición de arquitectura objetivo (con apoyo de arquitecto externo) basada en <strong>Spring Boot, Angular, Docker, Azure</strong>, asegurando calidad y estándares de entrega.</li>
+                    <li>Entorno <strong>internacional</strong>: documentación técnica/funcional en inglés y participación regular en reuniones en inglés.</li>
                   </ul>
+
                   <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-secondary">Java</span>
+                    <span class="badge text-bg-secondary">Spring MVC</span>
                     <span class="badge text-bg-secondary">Spring Boot</span>
-                    <span class="badge text-bg-secondary">Microservicios</span>
+                    <span class="badge text-bg-secondary">JSP</span>
                     <span class="badge text-bg-secondary">Angular</span>
-                    <span class="badge text-bg-secondary">Bootstrap 5</span>
+                    <span class="badge text-bg-secondary">Oracle</span>
+                    <span class="badge text-bg-secondary">MariaDB</span>
+                    <span class="badge text-bg-secondary">SAP IDOCs</span>
+                    <span class="badge text-bg-secondary">Docker</span>
+                    <span class="badge text-bg-secondary">Azure</span>
+                    <span class="badge text-bg-secondary">Jenkins</span>
+                    <span class="badge text-bg-secondary">SonarQube</span>
+                    <span class="badge text-bg-secondary">Nginx</span>
+                    <span class="badge text-bg-secondary">Bootstrap</span>
                   </div>
                 </div>
               </article>
             </div>
+
             <div class="col-md-6">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h5">GEC – Grupo Hedima</h3>
-                  <p class="text-muted mb-2">Senior Software Engineer / Analyst · 2008–2019</p>
+                  <p class="text-muted mb-2">Senior Software Engineer → Technical Analyst → Functional Lead / Project Manager · 2008–2019</p>
+
                   <ul class="small text-muted">
-                    <li>Entrega de más de 50 módulos e-learning para automoción y banca.</li>
-                    <li>Liderazgo de equipos pequeños y mejora continua del contenido.</li>
+                    <li>Estabilicé y evolucioné una plataforma legacy basada en Oracle durante la migración a <strong>Struts 1 + JSP</strong>, resolviendo incidencias críticas y mejorando fiabilidad.</li>
+                    <li>Me convertí en el <strong>referente técnico</strong> del producto: conocimiento profundo de módulos/configuración/extension points; mentoring a nuevos devs y desbloqueo de implementaciones complejas.</li>
+                    <li>Evolucioné a rol <strong>híbrido funcional/técnico</strong>: toma de requisitos con clientes, estimaciones, propuestas, análisis funcional y diseño técnico.</li>
+                    <li>Delivery end-to-end de evolutivos manteniéndome hands-on; coordinación de equipo pequeño (hasta <strong>3 ingenieros</strong>) y delegación cuando era necesario.</li>
+                    <li>Integraciones vía <strong>SOAP</strong>, <strong>REST</strong> y flujos por ficheros (<strong>CSV sobre FTP</strong>).</li>
+                    <li>Modernización de delivery: <strong>Ant → Maven</strong>, <strong>CVS → GitLab</strong>, primeros scripts de despliegue con <strong>GitLab CI</strong> y análisis estático local con <strong>Sonar</strong>.</li>
+                    <li>Soporte a iniciativa móvil implementando servicios backend consumidos por una <strong>app basada en Angular</strong>.</li>
                   </ul>
+
                   <div class="d-flex flex-wrap gap-2">
                     <span class="badge text-bg-secondary">Java</span>
-                    <span class="badge text-bg-secondary">Struts</span>
+                    <span class="badge text-bg-secondary">Struts 1</span>
+                    <span class="badge text-bg-secondary">JSP</span>
                     <span class="badge text-bg-secondary">jQuery</span>
+                    <span class="badge text-bg-secondary">Bootstrap</span>
+                    <span class="badge text-bg-secondary">Hibernate</span>
+                    <span class="badge text-bg-secondary">JPA</span>
                     <span class="badge text-bg-secondary">Oracle</span>
+                    <span class="badge text-bg-secondary">Maven</span>
+                    <span class="badge text-bg-secondary">GitLab CI</span>
+                    <span class="badge text-bg-secondary">SOAP/REST</span>
                   </div>
                 </div>
               </article>
@@ -192,35 +264,42 @@
 
       <section id="cases" class="py-5 bg-light">
         <div class="container">
-          <h2 class="section-title">Casos de éxito</h2>
+          <h2 class="section-title">Casos</h2>
           <p class="text-muted">
-            Espacio pensado para ampliar con resultados medibles y aprendizajes. El layout ya está preparado para crecer.
+            Sección preparada para casos de éxito y resultados medibles.
           </p>
+
           <div class="row g-4">
             <div class="col-md-4">
               <article class="card h-100">
                 <div class="card-body">
                   <h3 class="h6">NoteDraftForge (público)</h3>
-                  <p class="small text-muted">Plataforma de prototipado para acelerar revisión documental con apoyo de IA.</p>
-                  <p class="small">Resultado: ciclos de iteración más rápidos y estándares claros.</p>
+                  <p class="small text-muted">
+                    Prototipo web para acelerar la redacción y revisión de contenidos con prompts asistidos por IA.
+                  </p>
+                  <p class="small">
+                    Resultado: iteración más rápida, estándares de documentación más claros y estructura orientada a UX.
+                  </p>
                 </div>
               </article>
             </div>
+
             <div class="col-md-4">
               <article class="card h-100">
                 <div class="card-body">
-                  <h3 class="h6">Integración empresarial confidencial</h3>
-                  <p class="small text-muted">Modernización de middleware con flujos fiables y observabilidad.</p>
-                  <p class="small">Resultado: menos incidencias y mayor control operativo.</p>
+                  <h3 class="h6">Integración enterprise (confidencial)</h3>
+                  <p class="small text-muted">Modernización multi-sistema con flujos de datos fiables y monitorización.</p>
+                  <p class="small">Resultado: menos incidencias y mayor visibilidad operativa.</p>
                 </div>
               </article>
             </div>
+
             <div class="col-md-4">
               <article class="card h-100">
                 <div class="card-body">
-                  <h3 class="h6">Plataforma sanitaria</h3>
-                  <p class="small text-muted">Optimización de procesos críticos con coordinación de proveedores.</p>
-                  <p class="small">Resultado: entregas estables y responsabilidades claras.</p>
+                  <h3 class="h6">Plataforma de salud (confidencial)</h3>
+                  <p class="small text-muted">Mejora de fiabilidad en flujos hospitalarios coordinando proveedores.</p>
+                  <p class="small">Resultado: delivery más fluido y ownership más claro en módulos críticos.</p>
                 </div>
               </article>
             </div>
@@ -230,31 +309,34 @@
 
       <section id="working" class="py-5">
         <div class="container">
-          <h2 class="section-title">Cómo trabajar conmigo</h2>
+          <h2 class="section-title">Colaboración</h2>
           <div class="row g-4">
             <div class="col-md-4">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h6">Freelance</h3>
                   <p class="small text-muted">
-                    Disponibilidad 20–30 h/semana. Proyectos cerrados, bolsas de horas o mejoras evolutivas.
+                    Disponibilidad 20–30 horas/semana. Proyectos cerrados, bolsas de horas o roadmaps de mejora.
+                    Típicamente: servicios backend, incrementos de UI y trabajo de arquitectura/análisis.
                   </p>
                 </div>
               </article>
             </div>
+
             <div class="col-md-4">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h6">Colaboración temporal</h3>
-                  <p class="small text-muted">Transición, auditoría técnica o liderazgo interino.</p>
+                  <p class="small text-muted">Transición, auditoría y estabilización, o liderazgo técnico interino.</p>
                 </div>
               </article>
             </div>
+
             <div class="col-md-4">
               <article class="card h-100 shadow-sm">
                 <div class="card-body">
                   <h3 class="h6">Cuenta ajena</h3>
-                  <p class="small text-muted">Abierto a roles con ownership técnico y foco en fiabilidad.</p>
+                  <p class="small text-muted">Abierto a roles con ownership, impacto en arquitectura y foco en fiabilidad a largo plazo.</p>
                 </div>
               </article>
             </div>
@@ -266,8 +348,8 @@
         <div class="container">
           <h2 class="section-title">Música</h2>
           <p class="text-muted">
-            La música es una línea creativa paralela: voz, guitarra y pequeñas piezas sobre salud mental. Está en evolución y no es un
-            servicio en venta todavía.
+            La música es una línea creativa paralela (canto, guitarra y piezas que exploran salud mental). Está en evolución y todavía no
+            es una oferta de servicios.
           </p>
         </div>
       </section>
@@ -280,29 +362,43 @@
               <div class="card h-100">
                 <div class="card-body">
                   <h3 class="h6">Hablemos</h3>
-                  <p class="text-muted small">Disponible para remoto o híbrido.</p>
+                  <p class="text-muted small">Disponible para colaboraciones remotas o híbridas.</p>
+
                   <ul class="list-unstyled small mb-0">
-                    <li><strong>Email:</strong> <a href="mailto:clopezgarcias@gmail.com">clopezgarcias@gmail.com</a></li>
+                    <li>
+                      <strong>Email:</strong>
+                      <a href="mailto:carloslg.engineer@gmail.com">carloslg.engineer@gmail.com</a>
+                    </li>
                     <li>
                       <strong>LinkedIn:</strong>
-                      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">linkedin.com/in/tu-perfil</a>
+                      <a
+                        href="https://www.linkedin.com/in/carlos-l%C3%B3pez-8b7ba2b0/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        linkedin.com/in/carlos-lópez-8b7ba2b0
+                      </a>
                     </li>
                     <li>
                       <strong>GitHub:</strong>
-                      <a href="https://github.com" target="_blank" rel="noreferrer">github.com/tu-usuario</a>
+                      <a href="https://github.com/carloslg-dev" target="_blank" rel="noreferrer">
+                        github.com/carloslg-dev
+                      </a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+
+            <!-- This whole CTA card is hidden in print -->
+            <div class="col-md-6 no-print">
               <div class="card h-100 border-primary">
                 <div class="card-body">
                   <h3 class="h6">Siguientes pasos</h3>
                   <p class="text-muted small">
-                    Comparte contexto, restricciones y plazo. Responderé con una propuesta estructurada y un plan realista.
+                    Cuéntame el contexto, restricciones y timeline. Respondo con una propuesta estructurada y un plan de entrega realista.
                   </p>
-                  <a class="btn btn-primary" href="mailto:clopezgarcias@gmail.com">Iniciar conversación</a>
+                  <a class="btn btn-primary" href="mailto:carloslg.engineer@gmail.com">Iniciar conversación</a>
                 </div>
               </div>
             </div>
@@ -311,14 +407,14 @@
       </section>
     </main>
 
-    <footer class="py-4 border-top">
+    <footer class="py-4 border-top no-print">
       <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
-        <span class="small text-muted">© 2025 Carlos López García. Construido con Bootstrap 5.</span>
+        <span class="small text-muted">© 2026 Carlos López García. Built with Bootstrap 5.</span>
         <span class="small text-muted">Terrassa (Barcelona) · Español/Catalán · Inglés B2–C1</span>
       </div>
     </footer>
 
-    <!-- El bundle de Bootstrap solo se usa para el colapso de la navbar en móvil -->
+    <!-- Bootstrap bundle is only used for navbar collapse on mobile -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -327,3 +423,4 @@
     ></script>
   </body>
 </html>
+
